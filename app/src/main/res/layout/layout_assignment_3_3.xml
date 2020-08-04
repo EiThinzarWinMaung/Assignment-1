@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/digital_shop_transparent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/LoginBlog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/imgLogo">
+
+            <TextView
+                android:id="@+id/txtLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log in to your account"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtboxPhNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="Phone Number"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/txtLogin" />
+
+            <EditText
+                android:id="@+id/txtboxPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="Password"
+                android:textColor="#70FFFFFF"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/txtboxPhNo" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="#FF5722"
+                android:gravity="center"
+                android:text="log in"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtboxPassword" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ConnectBlog"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="50dp"
+                app:layout_constraintTop_toBottomOf="@id/btnLogin">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/txtConnect"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="5"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/Line"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Or connect with"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:id="@+id/Line"
+                    android:layout_width="3dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#D8DAD9"
+                    app:layout_constraintLeft_toRightOf="@id/txtConnect"
+                    app:layout_constraintRight_toLeftOf="@id/ConnectIcon" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/ConnectIcon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="5"
+                    app:layout_constraintLeft_toRightOf="@id/Line"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/FacebookBlog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/imgFacebook"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_facebook" />
+
+                            <TextView
+                                android:id="@+id/txtFacebook"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="Facebook"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp"
+                                app:layout_constraintLeft_toRightOf="@id/imgFacebook" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/GmailBlog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            app:layout_constraintTop_toBottomOf="@id/FacebookBlog">
+
+                            <ImageView
+                                android:id="@+id/imgGmail"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_gmail" />
+
+                            <TextView
+                                android:id="@+id/txtGmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="Gmail"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp"
+                                app:layout_constraintLeft_toRightOf="@id/imgGmail" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:background="#2FA0AF"
+            app:layout_constraintTop_toBottomOf="@id/LoginBlog">
+
+            <Button
+                android:id="@+id/btnForgetPW"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="forget password?"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/Line1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/Line1"
+                android:layout_width="3dp"
+                android:layout_height="40dp"
+                android:background="#D8DAD9"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/btnForgetPW"
+                app:layout_constraintRight_toLeftOf="@id/btnCreateAcc"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnCreateAcc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="create new account"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/Line1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

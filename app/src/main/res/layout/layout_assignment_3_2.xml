@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/txtAir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Air Mash"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgshoe"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="20dp"
+            android:contentDescription="Shoe"
+            android:src="@drawable/shoe"
+            app:layout_constraintTop_toBottomOf="@id/txtAir" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/iconHeartShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            app:layout_constraintTop_toBottomOf="@id/imgshoe">
+
+            <ImageView
+                android:id="@+id/imgHeart"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_heart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.8"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgShare"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_share_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintTop_toBottomOf="@id/iconHeartShare">
+
+            <View
+                android:id="@+id/Line"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:background="#D8DAD9" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintTop_toBottomOf="@id/Line1">
+
+            <TextView
+                android:id="@+id/ShoeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jog Air Mesh Summer Sneaker Shoes Sports Slip-on Max Size 46 Athletics Shoes"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/shoeMade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="From Tianjin"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@id/ShoeName" />
+
+            <TextView
+                android:id="@+id/shoeMinOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Minimum Order 5  Pcs"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@id/shoeMade" />
+
+            <TextView
+                android:id="@+id/shoeKs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Ks- 12,500"
+                android:textColor="#F3AF4A"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/shoeMinOrder" />
+
+            <TextView
+                android:id="@+id/shoePcs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="/Pcs"
+                android:textColor="#A6A4A4"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toRightOf="@+id/shoeKs"
+                app:layout_constraintTop_toBottomOf="@id/shoeMinOrder" />
+
+            <TextView
+                android:id="@+id/shoeSold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:text="28 Sold"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/shoePcs"
+                app:layout_constraintTop_toBottomOf="@id/shoeMinOrder" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintTop_toBottomOf="@id/info">
+
+            <View
+                android:id="@+id/Line"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:background="#D8DAD9"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ProductOptions"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/Line2">
+
+            <TextView
+                android:id="@+id/txtProductOptions"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Product Options"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_weight="7"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/txtSelect"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtSelect"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="Select"
+                app:layout_constraintBaseline_toBaselineOf="@id/txtProductOptions"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintLeft_toRightOf="@id/txtProductOptions"
+                app:layout_constraintRight_toLeftOf="@id/imgSelect" />
+
+            <ImageView
+                android:id="@+id/imgSelect"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_next"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toRightOf="@id/txtSelect"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Line3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintTop_toBottomOf="@id/ProductOptions">
+
+            <View
+                android:id="@+id/Line"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:background="#D8DAD9" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/Line3">
+
+            <ImageView
+                android:id="@+id/imgShop"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_shop"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/imgMessage"/>
+
+            <ImageView
+                android:id="@+id/imgMessage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_message_1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/imgShop"
+                app:layout_constraintRight_toLeftOf="@+id/btnAdd"/>
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add to card"
+                android:textColor="#FFFFFF"
+                android:background="#F3AF4A"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/imgMessage"
+                app:layout_constraintRight_toLeftOf="@+id/btnBuy"/>
+
+            <Button
+                android:id="@+id/btnBuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy now"
+                android:textColor="#FFFFFF"
+                android:background="#F3AF4A"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/btnAdd"
+                app:layout_constraintRight_toRightOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

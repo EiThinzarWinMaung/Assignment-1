@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtTeam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Our Team"
+            android:textSize="12pt"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/teamMembers1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtTeam">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/layout2">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/member1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="40dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:contentDescription="Team Member 1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/team_member_1" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/member1Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Adams G"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/member1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Executive Officer"
+                    android:textSize="15sp"
+                    app:layout_constraintTop_toBottomOf="@id/member1Name" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="@id/layout1"
+                app:layout_constraintRight_toLeftOf="@id/layout3">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/member2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="40dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:contentDescription="Team Member 2"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/team_member_2" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/member2Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Betty L"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/member2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Marketing"
+                    android:textSize="15sp"
+                    app:layout_constraintTop_toBottomOf="@id/member2Name" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="@id/layout2"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/member3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="40dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:contentDescription="Team Member 3"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/team_member_3" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/member3Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Roberts"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/member3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Business Analyst"
+                    android:textSize="15sp"
+                    app:layout_constraintTop_toBottomOf="@id/member3Name" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/teamMembers2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/teamMembers1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layou4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/layou5"
+                app:layout_constraintTop_toBottomOf="@id/layout1">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/member4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="40dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:contentDescription="Team Member 4"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/team_member_4" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/member4Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Miller W"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/member4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="UX Designer"
+                    android:textSize="15sp"
+                    app:layout_constraintTop_toBottomOf="@id/member4Name" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layou5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintLeft_toRightOf="@id/layou4"
+                app:layout_constraintRight_toLeftOf="@id/layou6"
+                app:layout_constraintTop_toBottomOf="@id/layout2">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/member5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="40dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:contentDescription="Team Member 5"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/team_member_5" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/member5Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Kevin John"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/member5" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Web Developer"
+                    android:textSize="15sp"
+                    app:layout_constraintTop_toBottomOf="@id/member5Name" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layou6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintLeft_toRightOf="@id/layou5"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout3">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/member6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="40dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:contentDescription="Team Member 6"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/team_member_6" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/member6Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Laura M"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/member6" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Mobile Dev"
+                    android:textSize="15sp"
+                    app:layout_constraintTop_toBottomOf="@id/member6Name" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/mission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Mission"
+            android:textSize="12pt"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/teamMembers2" />
+
+        <TextView
+            android:id="@+id/missionBlog1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            android:textSize="7pt"
+            app:layout_constraintTop_toBottomOf="@id/mission" />
+
+        <TextView
+            android:id="@+id/missionBlog2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            android:textSize="7pt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/missionBlog1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
